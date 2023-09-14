@@ -6,7 +6,10 @@ module.exports = {
   },
   plugins: [
     require("daisyui"),
-    
+    require("@tailwindcss/forms")({
+      
+      strategy: 'class', // only generate classes
+    }),
 ],
 }
 
