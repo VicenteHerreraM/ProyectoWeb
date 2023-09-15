@@ -12,125 +12,213 @@
 </head>
 
 <body class="h-full">
-        <header>
-            <div class="navbar bg-base-100 ">
-                <div class="navbar-start ">
-                    <div class="dropdown ">
-                        <label tabindex="0" class="btn btn-ghost">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="/">Página de inicio</a></li>
-                            <li>
-                                <a>Administrar perfil</a>
-                                <ul class="p-2">
-                                    <li><a href="/Dietas.html">Alimentación</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Rutinas de ejercicio</a></li>
-                        </ul>
+    <header>
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start ">
+                <div class="dropdown ">
+                    <label tabindex="0" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="/">Página de inicio</a></li>
+                        <li>
+                            <a>Administrar perfil</a>
+                            <ul class="p-2">
+                                <li><a href="/Dietas.html">Alimentación</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/pages/Rutinas.html">Rutinas de ejercicio</a></li>
+                    </ul>
+                </div>
+                <a href="/"
+                    class="btn btn-ghost font-bold text-2xl font-sans bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-red-600">Cboom</a>
+            </div>
+
+            <div class="navbar-end flex space-x-4 ">
+                <a href="/Registro.html" class="btn btn-outline btn-primary btn-sm">
+                    <p class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-rose-400">Registrarse
+                    </p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="min-h-[61%]">
+        <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <img class="mx-auto h-24 w-auto filter invert" src="/images/logo2.0png.png" alt="cboom">
+                <h2
+                    class="mt-10 text-center leading-9 tracking-tight font-bold text-2xl font-sans bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-red-600">
+                    Ingresa a tu cuenta</h2>
+            </div>
+
+            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <form class="space-y-6" action="#" method="POST">
+                    <div>
+                        <label for="email" class="block text-sm font-medium leading-6 text-white">Correo
+                            electrónico</label>
+                        <div class="mt-2">
+                            <input id="email" name="email" type="email" autocomplete="email" required
+                                class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
                     </div>
-                    <a href="/"
-                        class="btn btn-ghost font-bold text-2xl font-sans bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-red-600">Cboom</a>
-                </div>
 
-                <div class="navbar-end flex space-x-4 ">
-                    <a href="/Registro.html" class="btn btn-outline btn-primary btn-sm">
-                        <p class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-rose-400">Registrarse
-                        </p>
-                    </a>
-                </div>
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label for="password"
+                                class="block text-sm font-medium leading-6 text-white">Contraseña</label>
+
+                        </div>
+                        <div class="mt-2">
+                            <input id="password" name="password" type="password" autocomplete="current-password"
+                                required
+                                class="form-input bg-gray-800 block w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit"
+                            class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Iniciar
+                            sesión</button>
+                    </div>
+                </form>
+
+
             </div>
-        </header>
+        </div>
+    </main>
 
-        <main>
-            <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                    <img class="mx-auto h-10 w-auto"
-                        src="" alt="cboom">
-                    <h2 class="mt-10 text-center leading-9 tracking-tight font-bold text-2xl font-sans bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-red-600">Ingresa a tu cuenta</h2>
-                </div>
+    <footer class=" bg-gray-800">
+        <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+            <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+                “El músculo y la mente deben volverse uno. Uno sin el otro es cero”. Lee Haney.
+            </p>
 
-                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form class="space-y-6" action="#" method="POST">
-                        <div>
-                            <label for="email" class="block text-sm font-medium leading-6 text-white">Correo electrónico</label>
-                            <div class="mt-2">
-                                <input id="email" name="email" type="email" autocomplete="email" required
-                                    class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                            </div>
-                        </div>
+            <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+                <li>
+                    <a class="text-gray-400 transition hover:text-white" href="/">
+                        About
+                    </a>
+                </li>
 
-                        <div>
-                            <div class="flex items-center justify-between">
-                                <label for="password"
-                                    class="block text-sm font-medium leading-6 text-white">Contraseña</label>
-                                
-                            </div>
-                            <div class="mt-2">
-                                <input id="password" name="password" type="password" autocomplete="current-password"
-                                    required
-                                    class="form-input bg-gray-800 block w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                            </div>
-                        </div>
+                <li>
+                    <a class="text-gray-400 transition hover:text-white" href="/">
+                        Careers
+                    </a>
+                </li>
 
-                        <div>
-                            <button type="submit"
-                                class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Iniciar sesión</button>
-                        </div>
-                    </form>
+                <li>
+                    <a class="text-gray-400 transition hover:text-white" href="/">
+                        History
+                    </a>
+                </li>
 
+                <li>
+                    <a class="text-gray-400 transition hover:text-white" href="/">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-gray-400 transition hover:text-white" href="/">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-gray-400 transition hover:text-white" href="/">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="mt-12 flex gap-6 md:gap-8 justify-center">
+                <li>
+                    
+
+
+                    <div class="flex justify-center text-teal-600 sm:justify-start ">
+                        <span class="sr-only">CBOOM</span>
+                        <svg
+                          class="h-8"
+                          viewBox="0 0 118 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                           id="body_1"
+                        >
+                        <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
+                            <image x="52" y="-6" preserveAspectRatio="none" class="h-8 w-12" xlink:href="data:image/png;base64,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" />
+                        </g>
+                        </svg>
+                      </div>
                 
-                </div>
-            </div>
-        </main>
-        <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded absolute bottom-0">
-            <nav class="grid grid-flow-col gap-4">
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-            </nav>
-            <nav>
-                <div class="grid grid-flow-col gap-4">
-                    <a href="https://www.instagram.com/cboom.cl/"
-                        class="text-zinc-50 hover:text-mapler-red-50 group relative duration-300">
-                        <span class="sr-only">Instagram</span>
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
-                            class="h-6 w-6" aria-hidden="true" height="1em" width="1em"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <title></title>
-                            <path
-                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z">
-                            </path>
-                        </svg>
-                        <span
-                            class="absolute hidden group-hover:flex -translate-x-1/3 -top-2 -translate-y-full w-auto px-2 py-1 bg-zinc-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-zinc-700">Instagram</span>
-                    </a>
-                    <a href="https://www.facebook.com/cboom.cl"
-                        class="text-zinc-50 hover:text-mapler-red-50 group relative duration-300">
+                </li>
+                    
+                </li>
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank" class="text-gray-400 transition hover:text-white">
                         <span class="sr-only">Facebook</span>
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
-                            class="h-6 w-6" aria-hidden="true" height="1em" width="1em"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <title></title>
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
-                            </path>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd" />
                         </svg>
-                        <span
-                            class="absolute hidden group-hover:flex -translate-x-1/3 -top-2 -translate-y-full w-auto px-2 py-1 bg-zinc-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-zinc-700">Facebook</span>
                     </a>
-                </div>
-            </nav>
-            <aside>
-                <p>© <!-- -->2023<!-- --> CBOOM - Todos los derechos reservados.</p>
-            </aside>
-        </footer>
+                </li>
+
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank" class="text-gray-400 transition hover:text-white">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank" class="text-gray-400 transition hover:text-white">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank" class="text-gray-400 transition hover:text-white">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank" class="text-gray-400 transition hover:text-white">
+                        <span class="sr-only">Dribbble</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
