@@ -10,7 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
+  <script src="/js/Registro.js" type="text/javascript" defer></script>
+  <script src="/js/app.js" type="text/javascript" defer></script>
+
 </head>
+
+
 
 <body>
   <header>
@@ -67,7 +74,7 @@
         <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/pages/Blog.html">Blog</a></li>
       </ul>
       <a class="hidden lg:inline-block py-2 px-6 font-bold text-sm text-white bg-gradient-to-r from-red-600 to-purple-600 hover:from-blue-600 hover:to-green-500 rounded-xl transition-colors duration-500 transform active:scale-90"
-        href="/pages/InicioSesion.html">Inicio de Sesión</a>
+        href="/pages/Registro.html">Inicio de Sesión</a>
     </nav>
     <div class="navbar-menu relative z-50 hidden">
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-40"></div>
@@ -124,11 +131,10 @@
           </ul>
         </div>
         <div class="mt-auto">
+          <p class="text-center">¿Ya tienes cuenta?</p>
           <div class="pt-6">
-            <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold transition-colors duration-900 ease-in-out transform active:scale-95 bg-transparent hover:bg-gradient-to-r from-yellow-300 to-red-600 text-gray-50 hover:text-gray-800 rounded-xl "
-              href="/pages/InicioSesion.html">Iniciar Sesión</a>
             <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-gradient-to-r from-red-600 to-purple-600 hover:from-blue-600 hover:to-green-500 rounded-xl transition-colors duration-500 transform active:scale-95"
-              href="/pages/Registro.html">Crear cuenta</a>
+              href="/pages/Registro.html">Iniciar Sesión</a>
           </div>
           <p class="my-4 text-xs text-center text-gray-400">
             <span>Copyright © 2023</span>
@@ -138,104 +144,97 @@
     </div>
   </header>
 
-  <main class="bg-gradient-to-r from-gray-900 to-blue-900 container justify-between">
-    <div class="lg:w-60 sm:mx-auto sm:w-full sm:max-w-sm flex-col items-center justify-center min-h-[61%] p-5">
-      <form class="space-y-6 " action="#" method="POST">
-        <div>
-          <label for="email" class="block text-sm font-medium leading-6 text-white">Correo
-            electrónico</label>
+
+  <section class="bg-gradient-to-r from-gray-900 to-blue-900 ">
+    <form class="needs-validation" novalidate>
+      <div class="grid lg:grid-cols-2 gap-4 px-10 py-5 sm:mx-auto sm:w-full sm:max-w-sm min-h-[61%] p-5 space-y-auto">
+        <div class="lg:col-span-1">
+          <label for="email" class="block text-sm font-medium leading-6 text-white">Correo electrónico</label>
           <div class="mt-2">
             <input id="email" name="email" type="email" autocomplete="email" placeholder="Escribe tu correo" required
               class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
-        <div>
-          <label for="email" class="block text-sm font-medium leading-6 text-white">Nombre de Usuario</label>
+        <div class="lg:col-span-1">
+          <label for="name" class="block text-sm font-medium leading-6 text-white">Nombre de Usuario</label>
           <div class="mt-2">
-            <input id="name" name="name" type="name" autocomplete="name" placeholder="Nombre" required
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Nombre" required
               class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
-        <div>
+        <div class="lg:col-span-2">
           <label for="email" class="block text-sm font-medium leading-6 text-white">RUT</label>
           <div class="mt-2">
-            <input id="rut" name="rut" type="rut" autocomplete="rut" placeholder="12345678-9" required
+            <input id="rut" name="rut" type="text" autocomplete="rut" placeholder="12345678-9" required
               class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
-        <div>
-          <label for="email" class="block text-sm font-medium leading-6 text-white">Región</label>
+        <div class="lg:col-span-1">
+          <label for="region" class="block text-sm font-medium leading-6 text-white">Región</label>
           <div class="mt-2">
             <select
               class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               id="region" required>
-              <option selected disabled value="">Seleccione una región</option>
-              <option>Santiago</option>
-              <option>Atacama</option>
-              <option>Coquimbo</option>
-              <option>Valparaíso</option>
+              <option></option>
             </select>
           </div>
         </div>
 
-        <div>
-          <label for="email" class="block text-sm font-medium leading-6 text-white">Comuna</label>
+        <div class="lg:col-span-1">
+          <label for="comuna" class="block text-sm font-medium leading-6 text-white">Comuna</label>
           <div class="mt-2">
             <select
               class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               id="comuna" required>
-              <option selected disabled value="">Seleccione una comuna</option>
-              <option>Vitacura</option>
-              <option>Providencia</option>
-              <option>La Pintana</option>
-              <option>San Bernardo</option>
+              <option></option>
+              
             </select>
           </div>
         </div>
 
 
-        <div>
+        <div class="lg:col-span-1">
           <div class="flex items-center justify-between">
             <label for="password" class="block text-sm font-medium leading-6 text-white">Contraseña</label>
 
           </div>
           <div class="mt-2">
             <input id="password" name="password" type="password" autocomplete="current-password" required
-              class="form-input bg-gray-800 block w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
-        <div>
+        <div class="lg:col-span-1">
           <div class="flex items-center justify-between">
-            <label for="password" class="block text-sm font-medium leading-6 text-white">Confirmar
+            <label for="repassword" class="block text-sm font-medium leading-6 text-white">Confirmar
               Contraseña</label>
 
           </div>
           <div class="mt-2">
-            <input id="repassword" name="repassword" type="repassword" autocomplete="recurrent-password" required
-              class="form-input bg-gray-800 block w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input id="repassword" name="repassword" type="password" autocomplete="recurrent-password" required
+              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
-        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] item-center m-4 p-2" style="margin : auto">
+        <div class="lg:col-span-2 mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] item-center m-4 p-2" style="margin : auto">
           <input class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" type="checkbox"
-            value="" id="checkboxDefault" />
-          <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="checkboxDefault">
+            value="" id="tyc" />
+          <label class="inline-block pl-[0.15rem] hover:cursor-pointer text-white" for="tyc">
             Aceptar términos y condiciones
           </label>
         </div>
 
-        <div>
+        <div class="lg:col-span-2">
           <button type="submit"
-            class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 pb-24 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Crear
+            class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 pb-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transform active:scale-95">Crear
             cuenta</button>
         </div>
-      </form>
-    </div>
-  </main>
+      </div>
+    </form>
+  </section>
   <footer class=" bg-gray-800">
     <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
       <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
@@ -318,6 +317,7 @@
       </ul>
     </div>
   </footer>
+  <script src="" async defer></script>
 </body>
 
 <script>
@@ -362,5 +362,7 @@
     }
   });
 </script>
+
+
 
 </html>
