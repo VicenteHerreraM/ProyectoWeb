@@ -2782,6 +2782,11 @@ html {
   width: 0.5rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -2883,6 +2888,10 @@ html {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .content-center {
@@ -3364,6 +3373,10 @@ html {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-left {
