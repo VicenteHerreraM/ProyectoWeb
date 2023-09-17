@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CBOOM</title>
+  <title>Registro</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/styles.css">
@@ -14,7 +14,6 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
   <script src="/js/Registro.js" type="text/javascript" defer></script>
   <script src="/js/app.js" type="text/javascript" defer></script>
-
 </head>
 
 
@@ -59,22 +58,22 @@
             viewBox="0 0 24 24">
           </svg>
         </li>
-        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/pages/About.html">Acerca de Nosotros</a></li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/pages/acercaDe.html">Acerca de Nosotros</a></li>
         <li class="text-gray-300">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
             viewBox="0 0 24 24">
           </svg>
         </li>
-        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/pages/Contact.html">Contacto</a></li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/pages/contacto.html">Contacto</a></li>
         <li class="text-gray-300">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
             viewBox="0 0 24 24">
           </svg>
         </li>
-        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/pages/Blog.html">Blog</a></li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/pages/Informacion.html">Blog</a></li>
       </ul>
       <a class="hidden lg:inline-block py-2 px-6 font-bold text-sm text-white bg-gradient-to-r from-red-600 to-purple-600 hover:from-blue-600 hover:to-green-500 rounded-xl transition-colors duration-500 transform active:scale-90"
-        href="/pages/Registro.html">Inicio de Sesión</a>
+        href="/pages/InicioSesion.html">Inicio de Sesión</a>
     </nav>
     <div class="navbar-menu relative z-50 hidden">
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-40"></div>
@@ -114,15 +113,15 @@
             </li>
             <li class="mb-1">
               <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-gray-50 rounded transform active:scale-95"
-                href="/pages/Blog.html">Blog</a>
+                href="/pages/Informacion.html">Blog</a>
             </li>
             <li class="mb-1">
               <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-gray-50 rounded transform active:scale-95"
-                href="/pages/About.html">Acerca de Nosotros</a>
+                href="/pages/acercaDe.html">Acerca de Nosotros</a>
             </li>
             <li class="mb-1">
               <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-gray-50 rounded transform active:scale-95"
-                href="/pages/Contact.html">Contacto</a>
+                href="/pages/contacto.html">Contacto</a>
             </li>
             <li class="mb-1">
               <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-gray-50 rounded transform active:scale-95"
@@ -146,37 +145,37 @@
 
 
   <section class="container mx-auto">
-    <form class="needs-validation m-auto grid lg:grid-cols-4 gap-x-4 sm:w-full sm:max-w-sm my-16 lg:max-w-screen-lg" novalidate>
+    <form class="needs-validation m-auto grid lg:grid-cols-4 gap-x-4 sm:w-full sm:max-w-sm my-16 lg:max-w-screen-lg" action="/pages/perfilUsuario.html" novalidate>
       <div class="lg:col-span-4 pb-8 text-center font-extrabold text-transparent text-5xl lg:text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 "><p>CREAR CUENTA</p></div>
         <div class="lg:col-span-2">
-          <label for="email" class="block text-sm font-medium leading-6 text-white">Correo electrónico </label>
-          <div class="pb-2 mt-2">
+          <label for="email" class="label block text-sm font-medium leading-6 text-white">Correo electrónico </label>
+          <div class="pb-2">
             <input id="email" name="email" type="email" autocomplete="email" placeholder="Escribe tu correo" required
-              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6  lg:w-full">
+              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 lg:w-full invalid:ring-red-500">
           </div>
         </div>
 
         <div class="lg:col-span-2">
-          <label for="name" class="block text-sm font-medium leading-6 text-white">Nombre de Usuario</label>
-          <div class=" pb-2 mt-2">
+          <label for="name" class="label block text-sm font-medium leading-6 text-white">Nombre de Usuario</label>
+          <div class=" pb-2">
             <input id="name" name="name" type="text" autocomplete="name" placeholder="Nombre" required
-              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6  lg:w-full">
+              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 lg:w-full invalid:ring-red-500">
           </div>
         </div>
 
         <div class="lg:col-span-2">
-          <label for="email" class="block text-sm font-medium leading-6 text-white">RUT</label>
-          <div class="pb-2 mt-2">
+          <label for="email" class="label block text-sm font-medium leading-6 text-white">RUT</label>
+          <div class="pb-2">
             <input id="rut" name="rut" type="text" autocomplete="rut" placeholder="12345678-9" required
-              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 invalid:ring-red-500">
           </div>
         </div>
 
         <div class="lg:col-span-4">
-          <label for="region" class="block text-sm font-medium leading-6 text-white">Región</label>
-          <div class="pb-2 mt-2">
+          <label for="region" class="label block text-sm font-medium leading-6 text-white">Región</label>
+          <div class="pb-2">
             <select
-              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="input form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 invalid:ring-red-500"
               id="region" required>
               
             </select>
@@ -184,10 +183,10 @@
         </div>
 
         <div class="lg:col-span-4">
-          <label for="comuna" class="block text-sm font-medium leading-6 text-white">Comuna</label>
-          <div class="pb-2 mt-2">
+          <label for="comuna" class="label block text-sm font-medium leading-6 text-white">Comuna</label>
+          <div class="pb-2">
             <select
-              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 invalid:ring-red-500"
               id="comuna" name="comuna" required>
               
               
@@ -197,26 +196,26 @@
 
 
         <div class="lg:col-span-2">
-            <label for="password" class="block text-sm font-medium leading-6 text-white">Contraseña</label>
-          <div class="pb-2 mt-2">
+            <label for="password" class="label block text-sm font-medium leading-6 text-white">Contraseña</label>
+          <div class="pb-2">
             <input id="password" name="password" type="password" autocomplete="password" placeholder="Contraseña" required
-              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 invalid:ring-red-500">
           </div>
         </div>
 
         <div class="lg:col-span-2">
-            <label for="repassword" class="block text-sm font-medium leading-6 text-white">Confirmar
+            <label for="repassword" class="label block text-sm font-medium leading-6 text-white">Confirmar
               Contraseña</label>
-          <div class="pb-2 mt-2">
+          <div class="pb-2">
             <input id="repassword" name="repassword" type="password" autocomplete="recurrent-password" placeholder="Confirmar Contraseña" required
-              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              class="form-input block w-full rounded-md border-0 py-1.5 text-white bg-gray-800 first-letter:hadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 invalid:ring-red-500 ">
           </div>
         </div>
 
         <div class="lg:col-span-4 mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] item-center m-4 p-2" style="margin : auto">
           <input class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" type="checkbox"
-            value="" id="tyc" />
-          <label class="inline-block pl-[0.15rem] hover:cursor-pointer text-white" for="tyc">
+            name="tyc" id="tyc" required/>
+          <label class="label inline-block pl-[0.15rem] hover:cursor-pointer text-white" for="tyc">
             Aceptar términos y condiciones
           </label>
         </div>
@@ -236,7 +235,7 @@
 
       <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
         <li>
-          <a class="text-gray-400 transition hover:text-white" href="/pages/About.html">
+          <a class="text-gray-400 transition hover:text-white" href="/pages/acercaDe.html">
             Acerca
           </a>
         </li>
@@ -254,7 +253,7 @@
         </li>
 
         <li>
-          <a class="text-gray-400 transition hover:text-white" href="/pages/Blog.html">
+          <a class="text-gray-400 transition hover:text-white" href="/pages/Informacion.html">
             Blog
           </a>
         </li>

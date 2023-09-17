@@ -119,7 +119,7 @@ $(document).ready(function () {
         equalTo: "No son identicas"
       },
       tyc: {
-        required: "Es requerido aceptar términos y condiciones"
+        required: ""
       }
     }
   });
