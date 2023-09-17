@@ -3,5 +3,6 @@
     "liveServer.settings.proxy": {
         "enable": true
     },
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "livePreview.defaultPreviewPath": "/index.html"
 }
