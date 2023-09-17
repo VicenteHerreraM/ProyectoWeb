@@ -8,7 +8,7 @@
     <title>CBOOM</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500;1,900&display=swap"
@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <div class="navbar bg-gray-800">
+        <div class="navbar bg-base-100 ">
             <div class="navbar-start ">
                 <div class="dropdown ">
                     <label tabindex="0" class="btn btn-ghost">
@@ -35,131 +35,86 @@
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a href="/">Página de inicio</a></li>
                         <li>
-                            <a>Administrar perfil</a>
+                            <a class=>Administrar perfil</a>
                             <ul class="p-2">
-                                <li><a href="/Dietas.html">Alimentación</a></li>
+                                <li><a href="Dietas.html">Alimentación</a></li>
                             </ul>
                         </li>
-                        <li><a>Rutinas de ejercicio</a></li>
+                        <li><a href="/pages/Rutinas.html">Rutinas de ejercicio</a></li>
                     </ul>
                 </div>
                 <a href="/"
                     class="btn btn-ghost font-bold text-2xl font-sans bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-red-600">Cboom</a>
             </div>
 
-
+            <div class="navbar-end flex space-x-4 ">
+                <a href="pages/InicioSesion.html" class="btn btn-outline btn-secondary btn-sm">Iniciar sesión</a>
+                <a href="/Registro.html" class="btn btn-outline btn-primary btn-sm">
+                    <p class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-rose-400">Registrarse</p>
+                </a>
+            </div>
         </div>
     </header>
 
-    </main>
-    <section class="relative items-center w-full px-1 py-40 mx-auto md:px-12 lg:px-24 max-w-[75%] bg-black">
+    <main class="bg-gradient-to-r from-gray-900 to-blue-900">
+
         <div class="p-20">
             <p
                 class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 mt-1 text-3xl font-sans text-gray-300 font-bold tracking-tight justify-center">
-                Alimentacion</p>
+                Noticias</p>
 
-            <p class="mt-2 mb-10">En esta pagina podras encontrar multiples recetas y estilos de alimentacion,
-                los cuales van a tener distintas finalidades, ya sea tanto para bajar de peso, como ganar masa muscular.
-                Las posibilidades son infinitas y el limite esta en lo que te quieras enfocar.
+            <p class="mt-2 mb-10">En esta pagina podras encontrar articulos relacionados al mundo tanto del deporte,
+                como avances, consejos, entre otros articulos para mejorar tu calidad de vida. Mantente siempre actualizado en este
+                portal para que
+                no te pierdas ninguna informacion util o de interes.
             </p>
+
+            
+
+<section>
+    <div class=" flex flex-col items-center px-5 py-8 mx-auto">
+        <div class="flex flex-col w-full mb-12 prose text-left max-w-max lg:max-w-2xl">
+            <div class="w-full mx-auto">
+                <h1>A small headline to switch your visitors into users.</h1>
+                <h2>A small headline to switch your visitors into users.</h2>
+                <p>Right. Say that again. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking lot, you see us struggling in the car, you walk up, you open the door and you say, your line, George. Stop it. We're gonna take a little break but we'll be back in a while so, don't nobody go no where.</p>
+            </div>
         </div>
-    </section>
-
-
-    
-    <section>
-        <div class="relative items-center w-full px-1 py-40 mx-auto md:px-12 lg:px-24 max-w-[75%] bg-black">
-            <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-2">
-                <div class="p-6">
-                    <a href="#"><img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                            src="/images/FULL-bODY.png" alt="blog"></a>
-
-
-                    <h1
-                        class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-white lg:text-3xl">
-                        FULL-BODY</h1>
-                    <p class="mx-auto text-base leading-relaxed text-white">Breve descripción de la rutina de ejercicio
-                    </p>
-
-                    <div class="mt-4">
-                        <a href="#"
-                            class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
-                            title="read more"> Leer más »</a>
+    </div>
+    <div class=" items-center w-full px-10">
+        <div class="flex flex-wrap justify-center w-full mx-auto prose max-w-max lg:max-w-3xl">
+            <div class="relative justify-center lg:px-4">
+                <div class="lg:grid lg:grid-cols-3">
+                    <div class="p-8">
+                        <h1 class="">Short length headline.</h1>
+                        <p>You're about to launch soon and must be 100% focused on your product. Don't loose precious days designing, coding the landing page and testing .</p>
+                        <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
                     </div>
-                </div>
-                <div class="p-6">
-                    <a href="#">
-                        <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                            src="/images/pecho-hombro.png" alt="blog">
-                    </a>
-                    <h1
-                        class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-white lg:text-3xl">
-                        PECHO Y HOMBRO</h1>
-                    <p class="mx-auto text-base leading-relaxed text-white">Breve descripción de la rutina de ejercicio
-                    </p>
-
-                    <div class="mt-4">
-                        <a href="#"
-                            class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
-                            title="read more"> Leer más »</a>
+                    <div class="p-8">
+                        <h1 class="">Short length headline.</h1>
+                        <p>You're about to launch soon and must be 100% focused on your product. Don't loose precious days designing, coding the landing page and testing .</p>
+                        <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
                     </div>
-                </div>
-                <div class="p-6">
-                    <a href="#">
-                        <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                            src="/images/piernas.png" alt="blog">
-                    </a>
-                    <h1
-                        class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-white lg:text-3xl">
-                        PIERNAS</h1>
-                    <p class="mx-auto text-base leading-relaxed text-white">Breve descripción de la rutina de ejercicio
-                    </p>
-
-                    <div class="mt-4">
-                        <a href="#"
-                            class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
-                            title="read more"> Leer más » </a>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <a href="#">
-                        <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                            src="/images/espalda-biceps.png" alt="blog">
-                    </a>
-                    <h1
-                        class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-white lg:text-3xl">
-                        ESPALDA Y BICEPS</h1>
-                    <p class="mx-auto text-base leading-relaxed text-white">Breve descripción de la rutina de ejercicio
-                    </p>
-
-                    <div class="mt-4">
-                        <a href="#"
-                            class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
-                            title="read more"> Leer más »</a>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <a href="#">
-                        <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                            src="/images/base.png" alt="blog">
-                    </a>
-                    <h1
-                        class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-white lg:text-3xl">
-                        ESPALDA Y BICEPS</h1>
-                    <p class="mx-auto text-base leading-relaxed text-white">Breve descripción de la rutina de ejercicio
-                    </p>
-
-                    <div class="mt-4">
-                        <a href="#"
-                            class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600"
-                            title="read more"> Leer más »</a>
+                    <div class="p-8">
+                        <h1 class="">Short length headline.</h1>
+                        <p>You're about to launch soon and must be 100% focused on your product. Don't loose precious days designing, coding the landing page and testing .</p>
+                        <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    </main>
+    </div>
+</section>
 
+
+                </div>
+
+
+           
+            </div>
+        </div>
+
+    </main>
 
     <footer class=" bg-gray-800">
 		<div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
@@ -276,7 +231,6 @@
 			</ul>
 		</div>
 	</footer>
-
 </body>
 
 </html>
