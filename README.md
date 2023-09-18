@@ -28,5 +28,8 @@ INSTRUCCIONES:
             correo: pepito@gmail.com
             contraseña: 1234
 
+¿QUÉ ES CBOOM?
+CBOOM es una página web que tiene como objetivo ayudar a sus usuarios a mejorar su salud física de forma efectiva y divertida. En CBOOM, puedes encontrar dietas personalizadas y planes de ejercicios adaptados a tu nivel, objetivos y preferencias. Además, puedes acceder a consejos, recetas, vídeos y artículos sobre nutrición, deporte y bienestar. CBOOM te ofrece un acompañamiento profesional y motivador para que logres tus metas de forma saludable y sostenible.
+
 
 
